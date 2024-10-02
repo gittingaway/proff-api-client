@@ -57,15 +57,15 @@ type RegisterCompanyDetails struct {
 	// An annual account for a company or an enterprise.
 	CompanyMain []AnnualMain `json:"companyMain,omitempty"`
 	// A role a company has in a register company.
-	CompanyRoles []RegisterCompanyRole `json:"companyRoles,omitempty"`
-	ContactPerson *ContactPerson `json:"contactPerson,omitempty"`
+	CompanyRoles  []RegisterCompanyRole `json:"companyRoles,omitempty"`
+	ContactPerson *ContactPerson        `json:"contactPerson,omitempty"`
 	// An annual account for a company or an enterprise.
 	CorporateAccounts []AnnualAccount `json:"corporateAccounts,omitempty"`
 	// An annual account for a company or an enterprise.
 	CorporateCacheFlows []AnnualAccount `json:"corporateCacheFlows,omitempty"`
 	// An annual account for a company or an enterprise.
 	CorporateMain []AnnualMain `json:"corporateMain,omitempty"`
-	MainOffice *MainOffice `json:"mainOffice,omitempty"`
+	MainOffice    *MainOffice  `json:"mainOffice,omitempty"`
 	// A role a person has in a register company.
 	PersonRoles []RegisterPersonRole `json:"personRoles,omitempty"`
 	// A person that is a shareholder in a company.
@@ -81,19 +81,19 @@ type RegisterCompanyDetails struct {
 	// A subsidiary of a company.
 	Subsidiaries []Subsidiary `json:"subsidiaries,omitempty"`
 	// A credit rating of a company.
-	CreditRating *Object `json:"creditRating,omitempty"`
+	CreditRating *string `json:"creditRating,omitempty"`
 	// An analysis of a company
 	Analyses []Analysis `json:"analyses,omitempty"`
 	// A short analysis of a company
 	ShortAnalyses []ShortAnalysis `json:"shortAnalyses,omitempty"`
 	// Recent and upcoming trials for the company
-	Trials []Trial `json:"trials,omitempty"`
-	Mortgages *MortgagesRegistration `json:"mortgages,omitempty"`
-	CentralApproval *CentralApproval `json:"centralApproval,omitempty"`
+	Trials             []Trial                    `json:"trials,omitempty"`
+	Mortgages          *MortgagesRegistration     `json:"mortgages,omitempty"`
+	CentralApproval    *CentralApproval           `json:"centralApproval,omitempty"`
 	CorporateStructure *CorporateStructureSummary `json:"corporateStructure,omitempty"`
 	// Displays listings on public stock exchanges
 	PublicListings []PublicListing `json:"publicListings,omitempty"`
-	KeyFigures *KeyFigures `json:"keyFigures,omitempty"`
+	KeyFigures     *KeyFigures     `json:"keyFigures,omitempty"`
 	// Company business unit ID (DK only).
 	BusinessUnitId string `json:"businessUnitId,omitempty"`
 	// Company Id
@@ -129,13 +129,13 @@ type RegisterCompanyDetails struct {
 	// The profit for this company.
 	Profit string `json:"profit,omitempty"`
 	// The revenue for this company.
-	Revenue string `json:"revenue,omitempty"`
-	Link *Link `json:"link,omitempty"`
-	Location *Location `json:"location,omitempty"`
-	PhoneNumbers *TelephoneNumbers `json:"phoneNumbers,omitempty"`
-	PostalAddress *Address `json:"postalAddress,omitempty"`
-	Status *Status `json:"status,omitempty"`
-	VisitorAddress *Address `json:"visitorAddress,omitempty"`
+	Revenue        string            `json:"revenue,omitempty"`
+	Link           *Link             `json:"link,omitempty"`
+	Location       *Location         `json:"location,omitempty"`
+	PhoneNumbers   *TelephoneNumbers `json:"phoneNumbers,omitempty"`
+	PostalAddress  *Address          `json:"postalAddress,omitempty"`
+	Status         *Status           `json:"status,omitempty"`
+	VisitorAddress *Address          `json:"visitorAddress,omitempty"`
 	// Sector Code
 	SectorCode string `json:"sectorCode,omitempty"`
 	// Company purpose
