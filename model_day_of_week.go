@@ -9,14 +9,3 @@
 package proff
 
 type DayOfWeek int32
-
-// List of DayOfWeek
-const (
-	0__DayOfWeek DayOfWeek = "0"
-	1__DayOfWeek DayOfWeek = "1"
-	2__DayOfWeek DayOfWeek = "2"
-	3__DayOfWeek DayOfWeek = "3"
-	4__DayOfWeek DayOfWeek = "4"
-	5__DayOfWeek DayOfWeek = "5"
-	6__DayOfWeek DayOfWeek = "6"
-)
